@@ -2,6 +2,7 @@
 This project was built as an assignment for Upliance.ai internship.
 It is a simple heater actuating system with feeback. The actuating mechanism is substituted by a pink LED that turns on when the heating assembly is supposed to be on. The simulation was done on Wokwi and the files are provided in this repo.
 It consists of an arduino sketch, a diagram.json file which describes the circuit for Wokwi and a libraries.txt file which contains all the libraries used by this project.
+All these files can be directly uploaded into a Wokwi blank project and it will run the simulation.
 
 **Working:**
 1. When the system starts, the idle LED lights up. 
