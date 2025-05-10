@@ -9,24 +9,24 @@ It is a simple heater actuating system with feeback. The actuating mechanism is 
 - `libraries.txt`: List of required libraries for compiling the sketch.
 
 ## How It Works
-1. **Idle State**: On startup, the idle LED lights up.
+1. **Idle State**: On startup, the idle LED(blue) lights up.
 2. **Temperature Setting**: 
    - Set desired temperature (0–100) using a potentiometer.
    - Value is shown on the LCD display.
 3. **Heating**:
    - A DS18B20 sensor monitors current temperature.
-   - If current temp < setpoint *and* the switch is ON:
+   - If current temp < set point *and* the switch is ON:
      - Heating LED (pink) activates to simulate the heater.
      - Heating status LED (Red) also activates.
 4. **Stabilizing Phase**:
    - When the desired temperature is first reached:
-     - Stabilizing LED turns on for 3 seconds.
+     - Stabilizing LED(yellow) turns on for 3 seconds.
      - System continues adjusting as needed.
 5. **Target Reached**:
-   - LED indicates stable target temp.
+   - LED(green) indicates stable target temp.
 6. **Overheating Protection**:
    - If the system keeps heating despite reaching the target (actuator fault), 
-     - Overheating LED turns on.
+     - Overheating LED(orange) turns on.
      - Buzzer alerts user.
     
 ## Optional: BLE Integration
